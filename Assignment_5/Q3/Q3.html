@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Image Gallery</h1>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="image1.jpg" alt="Image 1">
+      <div class="caption">Garden roses</div>
+    </div>
+    <div class="gallery-item">
+      <img src="image2.jpg" alt="Image 2">
+      <div class="caption">Japanese camellia</div>
+    </div>
+    <div class="gallery-item">
+      <img src="image3.jpg" alt="Image 3">
+      <div class="caption">Daisy</div>
+    </div>
+    <div class="gallery-item">
+      <img src="image4.jpg" alt="Image 4">
+      <div class="caption">White cherry blossom</div>
+    </div>
+    <div class="gallery-item">
+      <img src="image5.jpg" alt="Image 5">
+      <div class="caption">Forget me not</div>
+    </div>
+    <div class="gallery-item">
+      <img src="image6.jpg" alt="Image 6">
+      <div class="caption">Poppy</div>
+    </div>
+  </div>
+</body>
+</html>
