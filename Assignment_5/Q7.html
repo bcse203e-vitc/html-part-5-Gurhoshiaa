@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Section Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            text-align: center;
+        }
+        
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #4caf50;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .navbar a:hover,
+        .navbar a:target {
+            background: #333;
+        }
+
+        .section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            border-bottom: 1px solid #ddd;
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+        <a href="#section4">Section 4</a>
+    </nav>
+    <div id="section1" class="section">
+        <h1>Section 1</h1>
+        <p>Content for Section 1.</p>
+    </div>
+    <div id="section2" class="section">
+        <h1>Section 2</h1>
+        <p>Content for Section 2.</p>
+    </div>
+    <div id="section3" class="section">
+        <h1>Section 3</h1>
+        <p>Content for Section 3.</p>
+    </div>
+    <div id="section4" class="section">
+        <h1>Section 4</h1>
+        <p>Content for Section 4.</p>
+    </div>
+</body>
+
+</html>

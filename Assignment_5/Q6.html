@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #d7e6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .animated-header {
+            text-align: center;
+        }
+
+        .header-title {
+            font-size: 40px;
+            color: #4caf50;
+            margin: 0;
+            animation: colorChange 4s infinite alternate, sizeChange 4s infinite alternate;
+        }
+
+        .header-description {
+            font-size: 18px;
+            margin: 10px 0 0;
+            color: #333;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .header-description:hover {
+            transform: scale(1.1);
+            color: #4caf50;
+        }
+
+        /* Keyframe Animations */
+        @keyframes colorChange {
+            0% {
+                color: #4caf4f72;
+            }
+
+            100% {
+                color: #4caf4f;
+            }
+        }
+
+        @keyframes sizeChange {
+            0% {
+                font-size: 40px;
+            }
+
+            100% {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="animated-header">
+        <h1 class="header-title">Welcome to My Animated Page</h1>
+        <p class="header-description">Hover over this text for a smooth transition!</p>
+    </header>
+</body>
+
+</html>

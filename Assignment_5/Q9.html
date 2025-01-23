@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .pricing-table {
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .plan {
+            flex: 1;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .plan h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .plan .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #45aaf2;
+            margin-bottom: 20px;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .plan ul li {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .plan.popular {
+            background: #fef9e7;
+            border: 2px solid #f7dc6f;
+        }
+
+        .plan.popular h2 {
+            color: #e67e22;
+        }
+
+        .plan.popular .price {
+            color: #e67e22;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #45aaf2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #3498db;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="pricing-table">
+        <h1>Our Pricing Plans</h1>
+        <div class="plans">
+
+            <div class="plan">
+                <h2>Basic</h2>
+                <p class="price">$9.99/month</p>
+                <ul class="features">
+                    <li>10 GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Email Support</li>
+                </ul>
+                <button class="btn">Choose Plan</button>
+            </div>
+
+            <div class="plan popular">
+                <h2>Popular</h2>
+                <p class="price">$19.99/month</p>
+                <ul class="features">
+                    <li>50 GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Priority Support</li>
+                </ul>
+                <button class="btn">Choose Plan</button>
+            </div>
+
+            <div class="plan">
+                <h2>Premium</h2>
+                <p class="price">$29.99/month</p>
+                <ul class="features">
+                    <li>200 GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Dedicated Support</li>
+                </ul>
+                <button class="btn">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
